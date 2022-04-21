@@ -7,6 +7,9 @@ from setuptools import setup, find_packages
 with open('README.md', encoding='utf-8') as f:
     long_text = f.read()
 
+with open('requirements.txt', encoding='utf-8') as f:
+    install_requires = f.read().strip().splitlines()
+
 setup(
     name="pyunit-distance",
     version="1.0.0",
@@ -19,7 +22,7 @@ setup(
     license='MIT Licence',
     packages=find_packages(),
     package_data={'': ['*']},
-    install_requires=['jieba'],
+    install_requires=install_requires,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

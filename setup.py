@@ -11,7 +11,7 @@ with open('requirements.txt', encoding='utf-8') as f:
     install_requires = f.read().strip().splitlines()
 
 setup(
-    name="pyunit-distance",
+    name="pyunit_distance",
     version="1.0.0",
     description="计算距离模块集合",
     long_description=long_text,
